@@ -1,0 +1,49 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		vet()
+						
+	}
+		
+	funcao vet()
+	{
+		
+		const inteiro num = 10
+		inteiro vetor[num], soma = 0, ax, i, j
+		
+
+			para( i = 0; i < num; i++){
+				escreva("Digite um ",i+1,"° número:  \n")
+				leia(vetor[i])
+			}
+				para( i = 0; i < num; i++){
+					para( j = 0; j < num; j++){
+						se(vetor[j]<vetor[i]){
+							ax = vetor[j]
+							vetor[j] = vetor[i]
+							vetor[i] = ax	
+					}
+					
+				}
+			}
+			escreva("A ordem decrescente é: \n")
+						para(i = 0; i < num; i++){
+							escreva("O ",i+1,"° número é: " ,vetor[i], "\n" )
+						
+				}
+	}	
+}
+
+/* $$$ Portugol Studio $$$ 
+ * 
+ * Esta seção do arquivo guarda informações do Portugol Studio.
+ * Você pode apagá-la se estiver utilizando outro editor.
+ * 
+ * @POSICAO-CURSOR = 45; 
+ * @PONTOS-DE-PARADA = ;
+ * @SIMBOLOS-INSPECIONADOS = ;
+ * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
+ */
